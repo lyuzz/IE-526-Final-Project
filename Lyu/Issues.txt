@@ -1,5 +1,5 @@
 Q1: How to import 50 retailers in one time? 
-Solution 1: If we can't, we just input them one by one. 
+Solved: Rui.
 
 Q2: How to make a truck serve more than one retailer?
 
