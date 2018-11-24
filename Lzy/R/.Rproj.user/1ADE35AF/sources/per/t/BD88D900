@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543015327778.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BD88D900",
+    "lastKnownWriteTime" : 4324785920,
+    "last_content_update" : 1543015327778,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "CB4217DB",
+        "caption" : "dist_time_sample",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=dist_time_sample&cache_key=CB4217DB",
+        "displayedObservations" : "2450",
+        "environment" : "",
+        "object" : "dist_time_sample",
+        "preview" : "0",
+        "totalObservations" : "2450",
+        "variables" : "4"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
