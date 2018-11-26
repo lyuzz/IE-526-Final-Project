@@ -15,8 +15,8 @@ customer_sample$pack_total_weight <- as.double(customer_sample$pack_total_weight
 customer_sample$pack_total_volume <- as.double(customer_sample$pack_total_volume)
 
 # writing data to .xlsx file
-library(xlsx)
-write.xlsx2(customer_sample, "customer_sample.xlsx", sheetName = "customer_sample", append=FALSE)
+# library(xlsx)
+# write.xlsx2(customer_sample, "customer_sample.xlsx", sheetName = "customer_sample", append=FALSE)
 # write .csv
 write.csv2(customer_sample, "customer_sample.csv", row.names=FALSE)
 test_data <- read.csv2("customer_sample.csv")
@@ -38,8 +38,9 @@ for (from in customer_sample$ID){
 names(dist_time_sample) <- c("from_node", "to_node", "distance", "travel_time")
 rm(from, to, ind, dist, travel_time)
 
-
-
+# write to file
+write.csv2(dist_time_sample, "dist_time_sample.csv", row.names=FALSE)
+test_data <- read.csv2("dist_time_sample.csv")
 
 
 
