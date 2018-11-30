@@ -65,7 +65,7 @@
 		 \sum_{i\in\mathcal{N}}\sum_{j\in\mathcal{N}\backslash\{i\}}d_{ij}x^k_{ij} \le&\  D_{max} \qquad \forall\  k \in \mathcal{K};\\
 		 \sum_{i\in\mathcal{N}}\sum_{j\in\mathcal{N}\backslash\{0,i\}}w_{j}x^k_{ij} \le&\  W_{max} \qquad \forall\  k \in \mathcal{K};\\
 		 \sum_{i\in\mathcal{N}}\sum_{j\in\mathcal{N}\backslash\{0,i\}}v_{j}x^k_{ij} \le&\  V_{max} \qquad \forall\  k \in \mathcal{K};\\		
-		 M\cdot (1-x^k_{ij}) + y_{j} \ge&\  y_i + t_{un} + t_{ij} \qquad \forall\  k \in \mathcal{K}, i, j\in \mathcal{N};\\
+		 M\cdot (1-x^k_{ij}) + y_{j} \ge&\  y_i + t_{un} + t_{ij} \qquad \forall\  k \in \mathcal{K}, i\in \mathcal{N}, j\in \mathcal{N}\backslash\{0\};\\
 		 y_i + t_{un} + t_{i0} \le&\  T_{max} \qquad \forall\  i\in \mathcal{N}\backslash\{0\}\\
 		 x^k_{ij} \in&\  \{0,1\} \qquad \forall\  k\in \mathcal{K},i, j\in \mathcal{N};\\
 		 y_i \ge&\  0 \qquad \qquad \forall\  i\in \mathcal{N}.

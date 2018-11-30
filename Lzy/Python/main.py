@@ -25,12 +25,12 @@ def main():
     del customer_data['lat']
 
     # parameter inpput
-    K = 50          # number of vehicles
+    K = 10          # number of vehicles
     c_f = 300       # fixed vehicle cost
     c_d = 14        # travel cost
     c_w = 24        # waiting time cost
     t_un = 0.5      # unloading time
-    D_max = 120     # maximal distance allowed
+    D_max = 2000    # maximal distance allowed
     W_max = 2.5     # maximal weight
     V_max = 16      # maximal volume
     T_thr = 8       # wait time threshold
