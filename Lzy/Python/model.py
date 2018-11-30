@@ -3,19 +3,35 @@ The model is defined here.
 """
 
 # importing
+import time
 import cplex
 import pandas as pd
 
 def model(customer_data, dist_time_data, c_f, c_d, c_w, t_un, D_max, W_max, V_max, T_thr, K):
     """model"""
 
+    # collecting time
+    start_time = time.time()
+
     # Basic settings
     c = cplex.Cplex()
     c.objective.set_sense(c.objective.sense.minimize)
-    c.parameters.simplex.display.set(2)
-    c.parameters.read.datacheck.set(1)
-    c.parameters.lpmethod.set(c.parameters.lpmethod.values.primal)
-    c.parameters.timelimit.set(3600)
+    c.parameters.simplex.display.set(2)     # solving process report
+    c.parameters.read.datacheck.set(1)      # checking consistency of data, better use it when testing model.
+    
+    # LP setting
+    # c.parameters.lpmethod.set(c.parameters.lpmethod.values.primal)    # method used when solving lp
+    
+    # MIP setting
+    c.parameters.mip.strategy.nodeselect.set(2)     # how to select node, see manual.
+    
+    # Memory settings
+    c.parameters.emphasis.memory.set(1)
+    c.parameters.mip.strategy.file.set(3)       # save tree nodes in a disk file, to save memory.
+    c.parameters.workmem.set(6144)              # working memory, set to 6 GB.
+    
+    # Time setting
+    # c.parameters.timelimit.set(3600)      # time limit
 
     # vehicle set
     vehicle = list(range(1, K + 1, 1))
@@ -183,7 +199,7 @@ def model(customer_data, dist_time_data, c_f, c_d, c_w, t_un, D_max, W_max, V_ma
             rhs = [W_max]
         )
         del ind, val
-
+    
     # (2.8)
     print("(2.8)...")
     for k in vehicle:
@@ -204,13 +220,13 @@ def model(customer_data, dist_time_data, c_f, c_d, c_w, t_un, D_max, W_max, V_ma
             rhs = [V_max]
         )
         del ind, val
-
+    
     # (2.9)
     print("(2.9)...")
     M = 1000
     for k in vehicle:
         for i in customer_data['ID'][0:]:
-            for j in customer_data['ID'][0:]:
+            for j in customer_data['ID'][1:]:
                 if i != j:
                     ind = [
                         'x.' + str(k) + '.' + str(i) + '.' + str(j),
@@ -230,7 +246,7 @@ def model(customer_data, dist_time_data, c_f, c_d, c_w, t_un, D_max, W_max, V_ma
                         )],
                         senses = "G",
                         rhs = [
-                            -1.0 * M + t_un + dist_time_data.query(expr)['travel_time'].iloc[0]
+                            t_un + dist_time_data.query(expr)['travel_time'].iloc[0] - M
                         ]
                     )
                     del ind, val
@@ -250,17 +266,18 @@ def model(customer_data, dist_time_data, c_f, c_d, c_w, t_un, D_max, W_max, V_ma
             rhs = [T_thr - t_un - dist_time_data.query(expr)['travel_time'].iloc[0]]
         )
         del ind, val
-
+    
     # solving
     print("Constraints added.")
     print("Start solving...")
     file_name = "solution_{}.txt"
     file = open(file_name.format(K), "w+")
-    file.write("NUMBER OF VEHICLES = " + str(K) + "\n")
+    file.write("\nNUMBER OF VEHICLES = " + str(K) + "\n\n")
     c.set_results_stream(file)
     c.solve()
 
     # printing to file
+    file.write("\nModel runtime = " + str(time.time() - start_time) + "\n\n")
     file.write("Solution Status = " + str(c.solution.status[c.solution.get_status()]) + "\n")
     file.write("Optimal value = %f\n" % c.solution.get_objective_value())
     index = 0
