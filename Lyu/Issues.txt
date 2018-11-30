@@ -8,3 +8,5 @@ A3: Total cost = fixed cost + variable cost
 
 Q4: How to get a optimal solution?
 Solution 1: 
+
+Zoning: Different areas
