@@ -1,0 +1,38 @@
+The route of truck 1 is [0, 37, 14, 43, 36, 41, 33, 10, 32, 6, 46, 49, 16, 0]
+Total weight is 1.686252
+Total volume is 6.6091999999999995
+Total traval time is 240
+Total traval distance is 194390
+
+
+The route of truck 2 is [0, 1, 50, 19, 12, 39, 26, 20, 35, 42, 31, 0]
+Total weight is 0.53201
+Total volume is 1.1965999999999999
+Total traval time is 243
+Total traval distance is 198107
+
+
+The route of truck 3 is [0, 25, 30, 47, 44, 23, 4, 8, 7, 29, 45, 2, 40, 0]
+Total weight is 0.9317500000000002
+Total volume is 2.8777
+Total traval time is 240
+Total traval distance is 193581
+
+
+The route of truck 4 is [0, 11, 27, 18, 28, 24, 9, 17, 38, 15, 34, 22, 5, 0]
+Total weight is 1.522232
+Total volume is 7.3968
+Total traval time is 243
+Total traval distance is 196080
+
+
+The route of truck 5 is [0, 21, 3, 13, 48, 0]
+Total weight is 0.786755
+Total volume is 1.4193999999999998
+Total traval time is 196
+Total traval distance is 161388
+
+
+Completed!
+
+Total cost = 14709.644
