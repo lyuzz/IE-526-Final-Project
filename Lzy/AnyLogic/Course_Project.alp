@@ -353,6 +353,10 @@
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[60]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[KPH]]></Unit>
+					</InitialSpeedCode>
 					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
@@ -1342,7 +1346,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[3]]></Code>
+							<Code><![CDATA[1]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -1358,6 +1362,36 @@
 						<Type><![CDATA[int[]]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[new int[12]]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1544587005445</Id>
+					<Name><![CDATA[travelDistance]]></Name>
+					<X>150</X><Y>150</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1544587653359</Id>
+					<Name><![CDATA[travelTime]]></Name>
+					<X>150</X><Y>200</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -1457,7 +1491,7 @@ this.visitList[10] = selectFrom(route).
 this.visitList[11] = selectFrom(route).
 	where(route.id.eq(this.id)).
 	uniqueResult(route.node_12);
-traceln(this.visitList);
+traceln(this.id + "." +this.visitList);
 ]]></EntryAction>
 						<FillColor/>
 					</Properties>
@@ -1466,11 +1500,12 @@ traceln(this.visitList);
 					<Id>1544561013995</Id>
 					<Name><![CDATA[atCustomer]]></Name>
 					<X>250</X><Y>280</Y>
-					<Label><X>10</X><Y>15</Y></Label>
+					<Label><X>15</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[traceln(this.id + "."+visitList[customerInd])]]></EntryAction>
 						<ExitAction><![CDATA[customerInd ++;]]></ExitAction>
 						<FillColor/>
 					</Properties>
@@ -1518,6 +1553,10 @@ traceln(this.visitList);
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[this.travelTime = 60 * selectFrom(dist_time_sample).
+	where(dist_time_sample.from_node.eq(visitList[customerInd]),
+		  dist_time_sample.to_node.eq(visitList[customerInd + 1])).
+	uniqueResult(dist_time_sample.travel_time);]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -1701,12 +1740,19 @@ traceln(this.visitList);
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>80</Y></Point>
 					</Points>
-					<IconOffset>30.0</IconOffset>
+					<IconOffset>40.0</IconOffset>
 					<Properties Source="1544567319989" Target="1544561013995" Trigger="timeout">
-						<Action><![CDATA[moveTo(findFirst(main.customers,
-	c -> c.id == visitList[customerInd]));]]></Action>
+						<Action><![CDATA[moveToInTime(findFirst(main.customers,
+	c -> c.id == visitList[customerInd]),
+	this.travelTime);
+
+this.travelDistance = this.travelDistance + 
+	selectFrom(dist_time_sample).
+	where(dist_time_sample.from_node.eq(visitList[customerInd]),
+		  dist_time_sample.to_node.eq(visitList[customerInd + 1])).
+	uniqueResult(dist_time_sample.distance);]]></Action>
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[travelTime]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -2048,6 +2094,28 @@ traceln(this.visitList);
 			</Shapes>
 
 				</Group>
+				<Text>
+					<Id>1544593222347</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>-13</X><Y>-6</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[text]]></Text>
+					<TextCode><![CDATA[this.id]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 
 		</ActiveObjectClass>
@@ -2457,6 +2525,28 @@ traceln(this.visitList);
 			</Shapes>
 
 				</Group>
+				<Text>
+					<Id>1544588121447</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>-10</X><Y>-10</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[text]]></Text>
+					<TextCode><![CDATA[this.id]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 
 		</ActiveObjectClass>
@@ -2868,6 +2958,24 @@ traceln(this.visitList);
 		<AutoExport>false</AutoExport>
 		<ImportSettings>
 			<ExternalConnection>
+				<Id>1544587050428</Id>
+				<Name><![CDATA[database]]></Name>
+				<X>0</X><Y>0</Y>
+				<Label><X>10</X><Y>0</Y></Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<DatabaseType>EXCEL_ACCESS</DatabaseType>
+				<ConnectionURL><![CDATA[]]></ConnectionURL>
+				<ConnectOnStartup>true</ConnectOnStartup>
+				<DatabaseName><![CDATA[]]></DatabaseName>
+				<DbFileName><![CDATA[dist_time_sample.xlsx]]></DbFileName>
+				<Host><![CDATA[localhost]]></Host>
+				<JdbcDriverClassName><![CDATA[net.sourceforge.jtds.jdbc.Driver]]></JdbcDriverClassName>
+				<Login><![CDATA[]]></Login>
+				<Password><![CDATA[]]></Password>
+			</ExternalConnection>
+			<ExternalConnection>
 				<Id>1544162775593</Id>
 				<Name><![CDATA[database]]></Name>
 				<X>0</X><Y>0</Y>
@@ -2906,9 +3014,18 @@ traceln(this.visitList);
 			<TableImportSettings>
 				<TableReference>
 					<PackageName><![CDATA[course_project]]></PackageName>
-					<ClassName><![CDATA[customer_sample]]></ClassName>
+					<ClassName><![CDATA[dist_time_sample]]></ClassName>
 				</TableReference>
 				<ConnectionIndex>0</ConnectionIndex>
+				<ExternalTableName><![CDATA["dist_time_sample"]]></ExternalTableName>
+				<AutoImport>true</AutoImport>
+			</TableImportSettings>
+			<TableImportSettings>
+				<TableReference>
+					<PackageName><![CDATA[course_project]]></PackageName>
+					<ClassName><![CDATA[customer_sample]]></ClassName>
+				</TableReference>
+				<ConnectionIndex>1</ConnectionIndex>
 				<ExternalTableName><![CDATA["customer_sample"]]></ExternalTableName>
 				<AutoImport>false</AutoImport>
 			</TableImportSettings>
@@ -2917,7 +3034,7 @@ traceln(this.visitList);
 					<PackageName><![CDATA[course_project]]></PackageName>
 					<ClassName><![CDATA[route]]></ClassName>
 				</TableReference>
-				<ConnectionIndex>1</ConnectionIndex>
+				<ConnectionIndex>2</ConnectionIndex>
 				<ExternalTableName><![CDATA["route"]]></ExternalTableName>
 				<AutoImport>true</AutoImport>
 			</TableImportSettings>
