@@ -1,0 +1,1021 @@
+%**************************************************************************
+%*
+%*  Paper: ``INSTRUCTIONS FOR AUTHORS OF LATEX DOCUMENTS''
+%*
+%*  Publication: 2018 Winter Simulation Conference Author Kit
+%*
+%*  Filename: writgd18.tex
+%*
+%*  Date: January 25, 2018   Time:  9:45 PM
+%*      BASE of current version: Feb 01, 2010 (primary WSC'10 LaTeX file)
+%*
+%*  Word Processing System: TeXnicCenter and MiKTeX
+%*
+%*
+%*  All files need the following
+\input{wsc18style.tex}     % download from author kit.  Style files for wsc formatting. Don't remove this line - required for generating the final paper!
+
+\documentclass{wscpaperproc}
+\usepackage{latexsym}
+%\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{mathptmx}
+
+%
+%****************************************************************************
+% AUTHOR: You may want to use some of these packages. (Optional)
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+%****************************************************************************
+
+
+
+%
+%****************************************************************************
+% AUTHOR: If you do not wish to use hyperlinks, then just comment
+% out the hyperref usepackage commands below.
+
+%% This version of the command is used if you use pdflatex. In this case you
+%% cannot use ps or eps files for graphics, but pdf, jpeg, png etc are fine.
+
+\usepackage[pdftex,colorlinks=true,urlcolor=blue,citecolor=black,anchorcolor=black,linkcolor=black]{hyperref}
+
+%% The next versions of the hyperref command are used if you adopt the
+%% outdated latex-dvips-ps2pdf route in generating your pdf file. In
+%% this case you can use ps or eps files for graphics, but not pdf, jpeg, png etc.
+%% However, the final pdf file should embed all fonts required which means that you have to use file
+%% formats which can embed fonts. Please note that the final PDF file will not be generated on your computer!
+%% If you are using WinEdt or PCTeX, then use the following. If you are using
+%% Y&Y TeX then replace "dvips" with "dvipsone"
+
+%%\usepackage[dvips,colorlinks=true,urlcolor=blue,citecolor=black,%
+%% anchorcolor=black,linkcolor=black]{hyperref}
+%****************************************************************************
+
+
+
+		
+
+
+
+%
+%****************************************************************************
+%*
+%* AUTHOR: YOUR CALL!  Document-specific macros can come here.
+%*
+%****************************************************************************
+%****************************************************************************
+%*
+%*  Miscellaneous new command definitions I sometimes like to use...
+%
+\newcommand{\emdash}{\text{---}}
+\newcommand{\ben}{\begin{enumerate}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parsep}{\smallskipamount}
+\setlength{\itemsep}{\smallskipamount}
+}
+\newcommand{\een}{\end{enumerate}}
+%\newcommand{\sect}[1]{\section*{{\large\bf#1}}} % Better ver. of \section*{}
+%\renewcommand{\arraystretch}{1.5}
+\newcommand{\comment}[1]{}
+\newcount\hour \newcount\minutes \hour=\time \divide\hour by 60
+\minutes=\hour \multiply\minutes by -60 \advance\minutes by \time
+\def\Hour{\number\hour}
+\def\Minutes{\ifnum\minutes<10 0\fi\number\minutes}
+\def\HourMinutes{\Hour:\Minutes}
+%*
+%*   End of miscellaneous new command definitions
+%*
+%*****************************************************************************
+% If you use theoremes
+\newtheoremstyle{wsc}% hnamei
+{3pt}% hSpace abovei
+{3pt}% hSpace belowi
+{}% hBody fonti
+{}% hIndent amounti1
+{\bf}% hTheorem head fontbf
+{}% hPunctuation after theorem headi
+{.5em}% hSpace after theorem headi2
+{}% hTheorem head spec (can be left empty, meaning `normal')i
+
+\theoremstyle{wsc}
+\newtheorem{theorem}{Theorem}
+\renewcommand{\thetheorem}{ \arabic{theorem}}
+\newtheorem{corollary}[theorem]{Corollary}
+\renewcommand{\thecorollary}{\arabic{corollary}}
+\newtheorem{definition}{Definition}
+\renewcommand{\thedefinition}{\arabic{definition}}
+
+
+%#########################################################
+%*
+%*  The Document.
+%*
+\begin{document}
+
+%***************************************************************************
+% AUTHOR: AUTHOR NAMES GO HERE 
+% FORMAT AUTHORS NAMES Like: Author1, Author2 and Author3 (last names)
+%
+%		You need to change the author listing below!
+%               Please list ALL authors using last name only, separate by a comma except
+%               for the last author, separate with "and"
+%
+\WSCpagesetup{Wilson}
+
+% AUTHOR: Enter the title, all letters in upper case
+\title{GUIDELINES ON WRITING A GOOD PAPER FOR THE \\
+\textbf{\textit{PROCEEDINGS OF THE  WINTER SIMULATION CONFERENCE}}}
+
+% AUTHOR: Enter the authors of the article, see end of the example document for further examples
+\author{James R. Wilson \\ [12pt]
+        North Carolina State University \\
+        Edward P. Fitts Department of Industrial and Systems Engineering \\
+        Raleigh, NC 27695-7906, USA \\
+% Multiple authors are entered as follows.
+% You may also need to adjust the titlevbox size in the preamble - search for titlevboxsize
+}
+
+\maketitle
+% \input{wscpage2.tex}
+
+\section*{ABSTRACT}
+As an aid to authors who seek to improve the clarity and readability of
+their papers in the \textit{Proceedings of the Winter Simulation
+Conference}, this paper summarizes some useful guidelines on technical
+writing, including current references on each topic that is discussed. 
+
+
+
+\section{OUTLINE OF KEY CONSIDERATIONS}
+\label{sec:intro}
+Writing a clear, readable exposition of complex technical work is at least
+as difficult as doing the work in the first place.  Given below is an
+outline of key considerations to bear in mind during all stages of writing
+a paper that will be reviewed for possible presentation at the Winter
+Simulation Conference (WSC) as well as publication in the {\em Proceedings
+of the Winter Simulation Conference}.  For questions about these
+guidelines, please send e-mail to
+\href{mailto:jwilson@ncsu.edu}{jwilson@ncsu.edu} or contact the proceedings
+editors.
+%\parindent=0em
+
+\ben %I
+\item[I.] Organizing the paper (what to do before beginning to write)
+\ben %A
+
+\item[A.] Analyze the situation---that is, the problem, the solution,
+and the target audience.
+\ben %1
+
+\item[1.] Formulate the objectives of the paper.
+
+\item[2.] Specify the scope of the paper's coverage of the subject and the
+results to be discussed.  Orient the paper toward the theme of your session
+as indicated either by the title of your session or by the instructions of
+your session chair.  Also take into account the general focus of the track
+containing your paper, which could be tutorials, case studies, vendors,
+methodologies, domain-specific applications, or general applications.
+
+\item[3.] Identify the target audience and determine the background knowledge
+that you can assume for this particular group of people.  Introductory
+tutorials are generally attended by newcomers who are interested in the
+basics of simulation.  Advanced tutorials are designed to provide more
+experienced professionals with a thorough discussion of special topics of
+much current interest; and some special-focus sessions in this track are
+designed to provide experts with an overview of recent fundamental advances
+in simulation theory.  Methodology sessions are attended by professionals
+who have at least an undergraduate-level background in computer simulation
+techniques.  In the case studies and applications tracks, session attendees
+are generally familiar with the area covered by their session.  Vendor
+sessions may contain both new and experienced users of the relevant
+software products. 
+
+\newpage
+\item[4.]
+Formulate the most logical sequence for presenting the information
+specified in item 2 to the readers identified in item 3.  For a discussion
+of effective aids in organizing your paper (specifically, brainstorming,
+clustering, issue trees, and outlining), see chapter 3 of
+Matthews and Matthews (2014).  In structuring your presentation, keep the
+following points in mind.
+
+%\newpage
+%\topmargin=-30.52pt
+%\setlength{\topmargin}{-30.52pt}
+\ben %a
+
+\item[a.]
+Introductory and advanced tutorials should have an educational perspective.
+Within the advanced tutorials track, special-focus sessions should synthesize
+the latest research results in a unified treatment of a given topic.
+
+\item[b.]
+Methodology contributions should provide state-of-the-art information on
+proven techniques for designing, building, and analyzing simulation models.
+
+
+\item[c.]
+Application papers should relate directly to the practice of simulation, and
+they should emphasize lessons of transferable value.
+
+\een %a
+\een %1
+
+\item[B.]
+Make outlines to organize your thoughts and then to plan both the
+written and oral presentations of your work.  For excellent discussions of
+the construction and use of various types of outlines, see the following:
+chapter 1 of Menzel, Jones, and Boyd (1961); the sections titled ``Develop
+an issue tree to assess presentation balance'' and ``Outline to develop the
+paper's framework'' in chapter 3 of Matthews and Matthews (2014); and
+chapter 3 of Pearsall and Cook (2010).
+\ben %1
+
+\item[1.] The introductory paragraph(s)
+\ben %a
+
+\item[a.] State the precise subject of the paper immediately.
+
+\item[b.] State the problem to be solved.
+
+\item[c.] Summarize briefly the main results and conclusions.
+
+\item[d.] Tell the reader how the paper is organized.
+
+\een %a
+
+\item[2.] The main body of the paper
+\ben %a
+
+\item[a.] Include enough detail in the main body of the paper so that the
+reader can understand what you did and how you did it; however, you should
+avoid lengthy discussions of technical details that are not of general
+interest to your audience.
+
+\item[b.]  Include a brief section covering notation, background information,
+and key assumptions if it is awkward to incorporate these items into the
+introductory paragraph(s).
+
+\item[c.] Include sections on theoretical and experimental methods as
+required.  For an application paper, you should discuss the development of
+the simulation model---including input data acquisition as well as design,
+verification, validation, and actual use of the final simulation model.
+For a methodological or theoretical paper that requires substantial
+mathematical development, see Halmos (1970), Higham (1998), pages 1--8 of
+Knuth, Larrabee, and Roberts (1989), Krantz (1997, 2001), or Swanson
+(1999).  For standard mathematical notation used in engineering and the
+sciences, see \textit{ISO 80000-2: Quantities and Units---Part 2:
+Mathematical Signs and Symbols to Be Used in the Natural Sciences and
+Technology} (ISO 2009) and Scheinerman (2011). 
+
+\item[d.] Plan the results section to achieve the most effective mix
+of text, figures, and tables in the presentation of the findings.  The
+definitive reference on the design of tables and figures is Tufte (2001).
+
+\een %a
+
+\item[3.] The concluding paragraph(s)
+\ben %a
+
+\item[a.] 
+Explain how the theoretical and experimental results relate to the original
+problem.  State why these results are important.
+
+\item[b.] 
+Summarize any unresolved issues that should be the subject of future work.
+
+\item[c.] 
+State the final conclusions explicitly in plain language.
+
+\een %a
+\een %1
+\een %A
+%\newpage
+
+\item[II.] Writing the paper
+\ben %A
+
+\item[A.]
+Prepare an abstract that is concise, complete in itself, and
+intelligible to a general reader in the field of simulation.  The
+abstract may not exceed 150 words, and it should not contain any
+references or mathematical symbols.
+\ben %1
+
+\item[1.] Summarize the objectives of the paper.
+
+\item[2.] Summarize the results and conclusions.
+
+\item[3.] State the basic principles underlying any new theoretical or
+experimental methods that are developed in the paper.
+
+\item[4.]
+For complete instructions on the preparation of scientific abstracts, see
+{\it Guidelines for Abstracts\/} (NISO 2010), pages 91--93 of Carter
+(1987), page 5 of the {\it AIP Style Manual\/} (AIP 1990), or chapter 9 of
+Gastel and Day (2016).
+\een %1
+
+
+\item[B.] Write the rest of the paper as though you were talking to a group of
+interested colleagues about your work.
+\ben %1
+
+\item[1.] 
+Strive for accuracy and clarity above all else.
+
+\item[2.]
+In writing the introduction, you should remember the following maxim:
+\begin{quote}
+The opening paragraph should be your best paragraph, and its opening
+sentence should be your best sentence.  (Knuth, Larrabee, and Roberts 1989,
+5)
+\end{quote}
+You cannot achieve such an ambitious goal on the first try; instead as you
+add new sections to the paper, you should review and revise all sections
+written so far.  For more on the spiral plan of writing, see pages 131--133
+of Halmos (1970).
+\ben
+\item[a.]
+Like the abstract, the introduction should be accessible to general
+readers in the field of simulation.  
+\item[b.]
+For methodology papers and advanced tutorials,
+substantially more advanced background may be assumed in the sections
+following the introduction.
+\een
+
+
+\item[3.]
+In constructing each sentence, place old and new information in the
+respective positions where readers generally expect to find such
+information.  For an excellent discussion of the principles of scientific
+writing based on reader expectations, see Gopen and Swan (1990) and
+Williams and Bizup (2014, 2017).
+\ben %1
+
+\item[a.] Place in the topic position (that is, at the beginning of the
+sentence) the old information linking backward to the previous discussion.
+
+\item[b.] Place in the stress position (that is, at the end of the sentence)
+the new information you want to emphasize.
+
+\item[c.] Place the subject of the sentence in the topic position, and follow
+the subject with the verb as soon as possible.
+
+\item[d.] Express the action of each sentence in its verb.
+\een %1
+
+\item[4.]
+Make the paragraph the unit of composition.
+\ben %a
+
+\item[a.] Begin each paragraph with a sentence that summarizes the topic to be
+discussed or with a sentence that helps the transition from the previous
+paragraph.
+
+\item[b.] Provide a context for the discussion before asking the reader to
+consider new information.
+
+
+\item[c.]
+Avoid paragraphs of extreme length---that is, one-sentence paragraphs and
+those exceeding 200 words.
+
+
+\item[d.] Place the important conclusions in the stress position at the end of
+the paragraph.
+\een %a
+
+\item[5.]
+Allocate space to a topic in proportion to its relative importance.
+
+\item[6.]
+For methodology papers, emphasize the concepts of general applicability
+that underlie the solution procedure rather than the technical details that
+are specific to the problem at hand.  Supply only the technical details and
+data that are essential to the development.
+
+\item[7.]
+For application papers, emphasize the new insights into the problem
+that you gained from designing, building, and using the simulation model.
+
+\item[8.]
+Use standard technical terms correctly.
+\ben %a
+\item[a.]
+For standard usage of mathematical terms, see James and James (1992) and
+Borowski and Borwein (2002).  For example, a nonsquare matrix cannot be
+called ``orthogonal'' even if any two distinct columns of that matrix are
+orthogonal vectors.
+\item[b.]
+For standard usage of statistical terms, see Dodge (2003), Porkess (2005),
+and Upton and Cook (2014).  For example, the probability density function
+of a continuous random variable cannot be called a ``probability mass
+function.'' 
+
+\item[c.]
+For standard usage of computer terms, see \textit{The Free On-Line
+Dictionary of Computing} (Howe 1993) and \textit{Dictionary of Algorithms
+and Data Structures} (Black 1998).
+
+\item[d.]
+For standard usage of industrial engineering terms, see {\it Industrial
+Engineering Terminology\/} (IISE 2000).  For example, the time that a workpiece
+spends in a manufacturing cell may be called ``cycle time'' or ``flow
+time'' but not ``throughput time.''
+\een %a
+
+\item[9.]
+Avoid illogical or potentially offensive sexist language.
+See Miller and Swift (2001) for a commonsense approach to this issue.
+
+\item[10.]
+Strictly avoid the following---
+\ben %a
+
+\item[a.]
+religious, ethnic, or political references;
+
+\item[b.]
+personal attacks;
+
+\item[c.]
+excessive claims about the value or general applicability of your work; and
+
+\item[d.]
+pointed criticism of the work of other people.
+\een %a
+
+Such language has no place in scientific discourse under any circumstances,
+and it will not be tolerated by the proceedings editors.  With
+respect to vendor sessions, items c and d immediately above require authors
+to avoid invidious comparisons of their products with competing products.
+
+
+\item[11.]
+In writing the final section of the paper containing conclusions and
+recommendations for future work, you should keep in mind the following
+maxim:
+\begin{quote}
+The mark of a good summary is revelation: ``Remember this, reader?  And
+that?  Well, here's how they fit together.'' (van Leunen 1992, 116)  
+\end{quote}
+
+\een %1
+
+
+
+\item[C.] For each table, compose a caption that briefly summarizes the
+content of the table.  Comment explicitly in the text on the significance
+of the numbers in the table; do not force the reader to guess at your
+conclusions.  See sections 3.46--3.85 of {\em The Chicago Manual of Style\/}
+(University of Chicago Press 2010) or chapter 16 of Gastel and Day (2016)
+for a comprehensive discussion of how to handle tables.
+
+\item[D.]For each figure, compose a caption (or legend) that explains every
+detail in the figure---every curve, point, and symbol.  See the {\em AIP
+Style Manual\/} (AIP 1990) or chapters 17 and 18
+of Gastel and Day (2016) for excellent examples.
+
+\item[E.] Revise and rewrite until the truth and clarity of every sentence are
+unquestionable.
+
+\ben %1
+\item[1.]
+For questions about the rules of English grammar and usage, see Bernstein
+(1965), Butterfield (2015), Fowler and Aaron (2016), Garner (2016), Hale
+(2013), O'Conner (2009), Strunk and White (2000), the \textit{Oxford
+English Dictionary} (Simpson and Weiner 1989), and {\it Webster's Third New
+International Dictionary of the English Language, Un\-a\-bridged\/} (Gove 1993).
+\item[2.]
+For those who use English as a second language, particularly helpful
+references are Booth (1993), Fowler and Aaron (2016), Huckin and Olsen
+(1991), and Yang (1995).
+
+\item[3.]
+For guidelines on how to edit your own writing effectively, see Cook (1985).
+
+\item[4.]
+For a comprehensive discussion of all aspects of scientific writing, see
+Alley (1996) and Gastel and Day (2016).
+\een %1
+
+\item[F.]
+Prepare a complete and accurate set of references that gives adequate credit
+to the prior work upon which your paper is based.
+\ben %1
+\item[1.]
+The author-date system of documentation is required for all papers
+appearing in the {\it Proceedings of the Winter Simulation Conference}.
+Chapter 15 of {\it The Chicago Manual of Style\/} (University of Chicago Press 2010) provides
+comprehensive, up-to-date information on this citation system.
+
+\item[2.]
+In preparing your list of references, you should strive for completeness,
+accuracy, and consistency.  Using the information provided in your list of
+references, the interested reader should be able to locate each source of
+information cited in your paper.
+
+\item[3.]
+For complete instructions on citing electronic sources, see sections
+14.4--14.13 of \textit{The Chicago Manual of Style} (University of Chicago Press 2010).  For example, sections 14.5 and 14.6 contain basic
+information on uniform resource locators (URLs) and Digital Object
+Identifiers (DOIs), respectively; and section 14.12 provides useful rules
+for breaking a URL or a DOI across two or more lines either in the text or
+in the list of references.  Many specific examples of citations for various
+types of electronic sources can be found throughout chapters 14 and 15 of
+\textit{The Chicago Manual of Style} (University of Chicago Press 2010).
+
+\item[4.] The final electronic version of your paper---that is, the portable
+document format (PDF) file ultimately produced from the Word or \LaTeX\
+source file of your paper---may include external hyperlinks referring to
+some of the electronic sources cited in the paper that are accessible
+online.
+\ben
+\item[a.]
+If an external hyperlink is live, then it is colored blue; and when viewing
+the PDF file of your paper on a computer, the reader may select (click)
+that hyperlink for immediate online access to the cited material.  More
+specifically, selecting (clicking) a live external hyperlink will activate
+the reader's web browser so that, if all goes well, the cited source of
+information will be displayed in the web browser.  A live external hyperlink
+may also be used to activate the reader's e-mail software for sending a
+message to a specific e-mail address; for example, see the hyperlink given
+in the first paragraph of this document.
+\item[b.]
+If an external hyperlink is not live, then it is colored black; and such a
+hyperlink merely displays the URL or DOI of the cited material without
+providing a mechanism for immediate online access to that material.  
+\item[c.]
+If you use external hyperlinks in your paper, then you must ensure that the
+text displayed for each external hyperlink is correct and complete so that
+a reader who has only a hard copy of the paper can still access the cited
+material by (carefully) typing the relevant displayed text of the hyperlink
+into the address bar of a web browser or e-mail program.  Remember that
+your responsibility for the accuracy and completeness of each hyperlink in
+your paper parallels your responsibility for the accuracy and completeness
+of each conventional citation of a nonelectronic source---neither the
+editors nor the publisher of the proceedings can verify any of this
+information for you. 
+\een
+
+\een%1
+
+
+\item[G.] 
+See Wilson (2002) for a discussion of the following ethical and
+``strategic'' considerations in writing a scientific paper that will be
+considered for publication in a peer-reviewed journal or conference
+proceedings such as the \textit{Proceedings of the Winter Simulation
+Conference}:
+\ben%1
+\item[1.]
+achieving a consensus among collaborators on who should be a coauthor of
+the paper;
+\item[2.]
+achieving a consensus among coauthors on the order of authorship in the paper's
+byline; and
+\item[3.]
+writing the paper so as to anticipate and answer key questions that will
+be asked by the paper's referees and readers.
+\een%1
+\een %A
+
+\item[III.] Achieving a natural and effective style
+\ben %A
+
+\item[A.] Alfred North Whitehead memorably expressed the gist of
+the matter of writing style:    
+\begin{quote}
+Finally, there should grow the most austere of all mental qualities; I
+mean the sense for style.  It is an aesthetic sense, based on admiration
+for the direct attainment of a foreseen end, simply and without waste.
+Style in art, style in literature, style in science, style in logic,
+style in practical execution have fundamentally the same aesthetic
+qualities, namely attainment and restraint.  The love of a subject in
+itself and for itself, where it is not the sleepy pleasure of pacing a
+mental quarter-deck, is the love of style as manifested in that study. 
+\smallskip\parindent=1.2em
+
+Here we are brought back to the position from which we started, the
+utility of education.  Style, in its finest sense, is the last acquirement
+of the educated mind; it is also the most useful. It pervades the whole
+being.  The administrator with a sense for style hates waste; the engineer
+with a sense for style economises his material; the artisan with a sense
+for style prefers good work.  Style is the ultimate morality of mind.
+(Whitehead 1929, 12)
+\end{quote}
+
+Kurt Vonnegut made the following equally trenchant observation on
+writing style. 
+\begin{quote}
+Find a subject you care about and which you in your heart feel others
+should care about. It is this genuine caring, and not your games with
+language, which will be the most compelling and seductive element in your
+style.  (Vonnegut 1985, 34)
+\end{quote}
+
+
+Strunk and White (2000), Williams and Bizup (2014, 2017), and Zinsser
+(2006) are excellent references on achieving a natural and effective
+writing style.
+
+
+\item[B.] Contrast the following descriptions of an experiment in optics:
+\ben %1
+
+\item[1.] I procured a triangular glass prism, to try therewith the celebrated
+phenomena of colors.  And for that purpose, having darkened my laboratory, and
+made a small hole in my window shade, to let in a convenient quantity of the
+sun's light, I placed my prism at the entrance, that the light might be
+thereby refracted to the opposite wall.  It was at first a very pleasing
+diversion to view the vivid and intense colors produced thereby.
+
+\item[2.]
+For the purpose of investigating the celebrated phenomena of
+chromatic refrangibility, a triangular glass prism was procured.
+After darkening the laboratory and making a small aperture in an
+otherwise opaque window covering in order to ensure that the optimum
+quantity of visible electromagnetic radiation (VER) would be admitted
+from solar sources, the prism was placed in front of the aperture for
+the purpose of reflecting the VER to the wall on the opposite side of
+the room.  It was found initially that due to the vivid and intense
+colors which were produced by this experimental apparatus, the overall
+effect was aesthetically satisfactory when viewed by the eye.
+
+\een %1
+
+The most striking difference between these two accounts of the experiment
+is the impersonal tone of the second version.  According to version 2,
+literally nobody performed the experiment.  Attempting to avoid the first
+person, the author of version 2 adopted the third person; this in turn
+forced the author to use passive verbs. As Menzel, Jones, and Boyd (1961,
+79) point out, ``Passive verbs increase the probability of mistakes in
+grammar; they start long trains of prepositional phrases; they foster
+circumlocution; and they encourage vagueness.''  Notice the dangling
+constructions in the second sentence of version 2.  Version 1 was written
+by Isaac Newton (1672, 3076).  Even though it was written over 340 years
+ago, Newton's prose is remarkable for its clarity and readability.
+
+\item[C.] To achieve a natural and effective writing style, you should adhere
+to the following principles that are elaborated in chapter 5 of Menzel, Jones,
+and Boyd (1961):
+\ben %1
+
+\item[1.] Write simply.
+
+\item[2.] Use the active voice.
+
+\item[3.]
+Use plain English words rather than nonstandard technical jargon or foreign
+phrases.
+
+\item[4.]
+Use standard technical terms correctly.
+
+\item[5.]
+Avoid long sentences and extremely long (or short) paragraphs.
+
+\item[6.]
+Avoid slavish adherence to any set of rules for technical writing, including
+the rules enumerated here.
+
+\item[7.]
+Remember that the main objective is to communicate your ideas clearly to your
+audience.
+
+\een %1
+\een %A
+\een %I
+
+\section{SUMMARY}
+
+In writing a paper for publication in the \textit{Proceedings of the Winter
+Simulation Conference}, the author should keep in mind the key
+considerations outlined in this paper.  Questions and suggestions for
+improvement of this document are welcome.
+
+\section*{ACKNOWLEDGMENTS}
+
+These guidelines are based on a similar document prepared by James O.\
+Henriksen, Stephen D.\ Roberts, and James R.\ Wilson for the {\em Proceedings
+of the 1986 Winter Simulation Conference}.
+
+
+\section*{REFERENCES}
+\begin{hangref}
+
+\item
+AIP (American Institute of Physics).  1990.  {\em AIP Style Manual}. 4th
+ed.  New York: AIP\@.  \href{http://kmh-lanl.hansonhub.com/AIP_Style_4thed.pdf}%
+{\url{http://kmh-lanl.hansonhub.com/AIP_Style_4thed.pdf}}\textcolor{black}{.}
+
+\item
+Alley, M\@.  1996.  \textit{The Craft of Scientific Writing}.  3rd ed.  New
+York: Springer.
+
+\item
+Bernstein, T. M\@.  1965.  {\it The Careful Writer: A Modern Guide to English
+Usage}.  New York: Atheneum.
+
+\item
+Black, P. E., ed\@.  1998.  \textit{Dictionary of Algorithms and Data
+Structures}. Washington, DC: National Institute of Standards and
+Technology.   \href{http://www.nist.gov/dads/}%
+{\url{http://www.nist.gov/dads}}\textcolor{black}{.}
+
+\item
+Booth, V\@. 1993.  {\it Communicating in Science: Writing a Scientific Paper
+and Speaking at Scientific Meetings}.  2nd ed.  Cambridge: Cambridge University
+Press.
+
+\item
+Borowski, E. J., and J. M. Borwein.  2002.  \textit{Collins Web-linked
+Dictionary of Mathematics}.  2nd ed.  Glasgow: HarperCollins.
+
+\item
+Butterfield, J.  2015.  {\em Fowler's Dictionary of Modern English Usage}.
+4th ed.\ New York: Oxford University Press.
+
+
+\item
+Carter, S. P\@. 1987. {\it Writing for Your Peers: The Primary Journal Paper}.
+New York: Praeger.
+
+\item
+Cook, C. K\@.  1985.  {\it Line by Line: How to Improve Your Own Writing}.
+Boston: Houghton Mifflin Co.
+
+\comment{
+\item
+Day, R. A., and N. Sakaduski. 2011.  \textit{Scientific English: A Guide
+for Scientists and Other Professionals}.  3rd ed.  Santa Barbara, CA: Greenwood.
+}
+
+\item
+Dodge, Y\@. ed.  2003.  \textit{The Oxford Dictionary of Statistical
+Terms}.  6th ed.  New York: Oxford University Press.
+  
+
+\item
+Fowler, H. R., and J. E. Aaron.  2016.  {\em The Little, Brown Handbook}.
+13th ed.  Boston: Pearson.
+
+\comment{
+\item
+Fowler, H. W\@.  1965.  \textit{A Dictionary of Modern English Usage}.
+2nd ed.  Revised and edited by Sir Ernest Gowers. New York: Oxford University Press.
+}
+
+\item
+Garner, B. A\@.  2016. \textit{The Chicago Guide to Grammar, Usage, and
+Punctuation}.  Chicago: University of Chicago Press.
+
+\item
+Gastel, B., and R. A. Day. 2016.  {\it How to Write and Publish a
+Scientific Paper}.  8th ed.  Santa Barbara, CA: Greenwood.
+
+
+\item
+Gopen, G. D., and J. A. Swan.  1990.  ``The Science of Scientific Writing.''  {\em
+American Scientist\/} 78(6):550--558.
+
+\item
+Gove, P. B\@.  1993.  {\em Webster's Third New International Dictionary of the English Language,
+Unabridged}.  Springfield, MA: Merriam-Webster.  
+\href{http://unabridged.merriam-webster.com}{%
+\url{http://unabridged.merriam-webster.com}}\textcolor{black}{.}
+
+
+\item
+Hale, C\@.  2013.  \textit{Sin and Syntax: How to Craft Wickedly
+Effective Prose}.  New York: Three Rivers Press.
+
+\item
+Halmos, P. R\@.  1970. ``How to Write Mathematics.''
+\textit{L'Enseignement Math\'ematique} 16(2):123--152. 
+\href{http://www4.ncsu.edu/~jwilson/files/halmos70em.pdf}%
+{\url{http://www4.ncsu.edu/~jwilson/files/halmos70em.pdf}}\textcolor{black}{.}
+
+
+\item
+Higham, N. J\@.  1998.  {\it Handbook of Writing for the Mathematical
+Sciences}.  2nd ed.  Philadelphia: Society for Industrial and Applied
+Mathematics.
+
+\item
+Howe, D., ed\@.  1993.  \textit{The Free On-Line Dictionary of Computing}.
+London: Imperial College Department of Computing.    
+\href{http://foldoc.org/}%
+{\url{http://foldoc.org}}\textcolor{black}{.}
+
+
+\item
+Huckin, T. N., and L. A. Olsen.  1991.  {\it Technical Writing and
+Professional Communication for Nonnative Speakers of English}.  2nd ed. New
+York: McGraw-Hill.
+
+
+\item
+IISE (Institute of Industrial and Systems Engineers).  2000. {\it
+Industrial Engineering Terminology}.  Rev.\ ed.  Norcross, GA: Institute of
+Industrial Engineers.
+\href{http://www.iise.org/details.aspx?id=645}%
+{\url{http://www.iise.org/details.aspx?id=645}}\textcolor{black}{.}
+
+
+\item
+ISO (International Organization for Standardization).  2009.  \textit{ISO
+80000-2: Quantities and Units: Part 2: Mathematical Signs and Symbols to
+Be Used in the Natural Sciences and Technology}.  Geneva: International
+Organization for Standardization.
+\href{http://www4.ncsu.edu/~jwilson/files/mathsigns.pdf}%
+{\url{http://www4.ncsu.edu/~jwilson/files/mathsigns.pdf}}\textcolor{black}{.}
+
+ 
+\item
+James, R. C., and G. James.  1992.  {\it Mathematics Dictionary}. 5th ed.
+New York: Chapman \& Hall.
+
+\item
+Knuth, D. E., T. Larrabee, and P. M. Roberts.  1989.  \textit{Mathematical
+Writing}.  Washington, DC: Mathematical Association of America.  
+\href{http://www4.ncsu.edu/~jwilson/files/mathwriting.pdf}%
+{\url{http://www4.ncsu.edu/~jwilson/files/mathwriting.pdf}}\textcolor{black}{.}
+
+\item
+Krantz, S. G\@.  1997.  {\it A Primer of Mathematical Writing: Being a
+Disquisition on Having Your Ideas Recorded, Typeset, Published, Read, and
+Appreciated}.  Providence, RI: American Mathematical Society.
+
+\item
+Krantz, S. G\@.  2001.  \textit{Handbook of Typography for the
+Mathematical Sciences}.  Boca Raton, FL: Chapman and Hall/CRC.
+
+\item
+Matthews, J. R., and R. W. Matthews.  2014.  {\it
+Successful Scientific Writing: A Step-by-Step Guide for the Biological
+and Medical Sciences}.  4th ed.  Cambridge: Cambridge University Press.
+
+
+\item
+Menzel, D. H., H. M. Jones, and L. G. Boyd.  1961.  {\em Writing
+a Technical Paper}.  New York: McGraw-Hill Book Company.
+
+
+\item
+Miller, C., and K. Swift.  2001.  {\em The Handbook of Nonsexist Writing}.
+2nd ed.  San Jose, CA: iUniverse.com.
+
+
+
+\item
+Newton, I\@.  1672.  ``New Theory of Light and Colors.''  {\em Philosophical
+Transactions} 6(80):3075--3087.
+
+
+\item
+NISO (National Information Standards Organization).
+  2010.  {\it ANSI/NISO Z39.14-1997 (R2009): Guidelines for Abstracts}. Bethesda, MD: NISO Press.  
+\href{http://www.oregon.gov/ODOT/Programs/ResearchDocuments/Abstract-Guidelines.pdf}{%
+\url{http://www.oregon.gov/ODOT/Programs/ResearchDocuments/Abstract-Guidelines.pdf}}\textcolor{black}{.}
+
+\item
+O'Conner, P. T\@.  2009.  \textit{Woe Is I: The Grammarphobe's Guide to
+Better English in Plain English}.  3rd ed.  New York: Riverhead Books.
+
+\item
+Pearsall, T. E., and K. C. Cook.  2010.  \textit{The Elements of Technical
+Writing}.  3rd ed.  New York: Longman.
+
+\item
+Porkess, R., ed.  2005.  \textit{Collins Web-linked Dictionary of
+Statistics}.  2nd ed.  Glasgow: HarperCollins.
+
+\item
+Scheinerman, E. R\@.  2011.  \textit{Mathematical Notation: A Guide for
+Engineers and Scientists}.  Seattle: CreateSpace.
+\href{https://www.ams.jhu.edu/ers/books/mathematical-notation}%
+{\url{https://www.ams.jhu.edu/ers/books/mathematical-notation}}\textcolor{black}{.}
+
+\item
+Simpson, J.~A., and E.~S.~C. Weiner, eds. 1989.
+{\em Oxford English Dictionary}. 2nd ed.
+Oxford, UK: Oxford University Press.
+\href{http://www.oed.com}{%
+\url{http://www.oed.com}}\textcolor{black}{.}
+
+
+\item
+Strunk, W., Jr., and E. B. White.  2000.  {\em The Elements of Style}.
+4th ed.  Boston: Allyn and Bacon.
+
+
+\item
+Swanson, E\@.  1999.  {\it Mathematics into Type}.  Updated edition by
+A. O'Sean and A. Schleyer.  Providence, RI: American
+Mathematical Society.
+
+\item
+University of Chicago Press. 2010.
+\textit{The Chicago Manual of Style}.  16th ed.  Chicago: University of Chicago Press.
+\href{http://www.chicagomanualofstyle.org}{%
+\url{http://www.chicagomanualofstyle.org}}\textcolor{black}{.}
+
+
+
+
+\item
+Tufte, E. R\@.  2001.  {\em The Visual Display of Quantitative Information}.
+2nd ed.  Cheshire, CT: Graphics Press.
+
+
+\item
+Upton, G., and I. Cook.  2014.  \textit{A Dictionary of
+Statistics}.  3rd ed.  Oxford: Oxford University Press.
+
+
+\item
+van Leunen, M.-C\@.  1992.  \textit{A Handbook for Scholars}.  Rev.\ ed.
+New York: Oxford University Press.
+
+
+\item
+Vonnegut, K\@.  1985.  ``How to Write with Style.''  In \textit{How to Use
+the Power of the Printed Word}, edited by B. S. Fuess, Jr., 33--38.
+Garden City, NY: Anchor Press/Doubleday.  
+\href{http://www.novelr.com/2008/08/16/vonnegut-how-to-write-with-style}{%
+\url{http://www.novelr.com/2008/08/16/vonnegut-how-to-write-with-style}}\textcolor{black}{.}
+
+
+
+
+
+\item
+Whitehead, A. N\@.  1929.  ``The Aims of Education.''  In \textit{The Aims of
+Education and Other Essays}, 12.  New York: The Free Press.
+
+\item
+Williams, J. M., and J. Bizup.  2014.  \textit{Style: The Basics of Clarity and
+Grace}.  5th ed.  Boston: Longman. 
+
+
+\item
+Williams, J. M., and J. Bizup.  2017.  {\it Style: Lessons in Clarity and Grace}.
+12th ed.  Boston: Pearson.
+
+\item%[(68)]
+Wilson, J. R\@.  2002.  ``Responsible Authorship and Peer Review.''
+\textit{Science and Engineering Ethics} 8(2):155--174.  
+\href{http://www4.ncsu.edu/~jwilson/files/wilson02see.pdf}%
+{\url{http://www4.ncsu.edu/~jwilson/files/wilson02see.pdf}}\textcolor{black}{.}
+
+
+\item
+Yang, J. T\@.  1995.  \textit{An Outline of Scientific Writing: For
+Researchers with English as a Foreign Language}.  Singapore: World
+Scientific.  
+
+\item
+Zinsser, W\@.  2006.  {\it On Writing Well: The Classic Guide to Writing
+Nonfiction}.  7th ed.  New York: HarperCollins Publishers.
+\end{hangref}
+
+
+\section*{AUTHOR BIOGRAPHY}
+ 
+\noindent {\bf JAMES R. WILSON} 
+is a professor in the Edward P. Fitts Department of Industrial and Systems
+Engineering at North Carolina State University.  His current research
+interests are focused on probabilistic and statistical issues in the design
+and analysis of simulation experiments.  He has held the following
+editorial positions: departmental editor of \textit{Management Science}
+(1988--1996); area editor of \textit{ACM Transactions on Modeling and
+Computer Simulation} (1997--2002); guest editor of a special issue of
+\textit{IIE Transactions} honoring Alan Pritsker (1999--2001); and
+Editor-in-Chief of \textit{ACM Transactions on Modeling and Computer
+Simulation} (2004--2010).  He served The Institute of Management Sciences
+College on Simulation (now the INFORMS Simulation Society) as
+secretary-treasurer (1984--1986), vice president (1986--1988), and
+president (1988--1990).  His activities in the Winter Simulation Conference
+(WSC) include service as proceedings editor
+(1986), associate program chair (1991), and program chair (1992).  During
+the period 1997--2004, he was a member of the WSC Board of Directors
+corepresenting the INFORMS Simulation Society; and he served as secretary
+(2001), vice chair (2002), and chair (2003).  During the period 2006--2009,
+he was a trustee of the WSC Foundation, serving as secretary (2006),
+vice-president (2007), and president (2008).  He is a member of ACM, ASA,
+ASEE and SCS; and he is a fellow of IIE and INFORMS\@.  His e-mail address
+is
+\href{mailto:jwilson@ncsu.edu}{jwilson@ncsu.edu}\textcolor{black}{,} and his web address is 
+\href{http://www.ise.ncsu.edu/jwilson}{http://www.ise.ncsu.edu/jwilson}\textcolor{black}{.}
+
+
+
+\end{document}
+

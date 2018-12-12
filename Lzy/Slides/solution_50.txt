@@ -1,0 +1,191 @@
+NUMBER OF VEHICLES = 50
+CPXPARAM_Simplex_Display                         2
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Read_DataCheck                          1
+CPXPARAM_LPMethod                                1
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 51 columns.
+MIP Presolve modified 10000 coefficients.
+Reduced MIP has 125300 rows, 127500 columns, and 6759800 nonzeros.
+Reduced MIP has 127500 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 1.91 sec. (3050.14 ticks)
+Found incumbent of value 68435.732000 after 6.26 sec. (7134.16 ticks)
+Probing time = 0.31 sec. (47.79 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 125300 rows, 127500 columns, and 6759800 nonzeros.
+Reduced MIP has 127500 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 2.77 sec. (3322.92 ticks)
+Probing time = 0.28 sec. (47.78 ticks)
+Clique table members: 2700.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 7.52 sec. (8019.79 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                        68435.7320        0.0000           100.00%
+      0     0        cutoff          68435.7320                   9381    0.00%
+
+Root node processing (before b&c):
+  Real time             =   18.55 sec. (19796.75 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =   18.55 sec. (19796.75 ticks)
+Solution Status = MIP_optimal
+Optimal value = 68435.732000
+x.1.0.331 = 1.0
+x.1.331.0 = 1.0
+x.2.0.645 = 1.0
+x.2.645.0 = 1.0
+x.3.0.299 = 1.0
+x.3.299.0 = 1.0
+x.4.0.550 = 1.0
+x.4.550.0 = 1.0
+x.5.0.322 = 1.0
+x.5.322.0 = 1.0
+x.6.0.276 = 1.0
+x.6.276.0 = 1.0
+x.7.0.303 = 1.0
+x.7.303.0 = 1.0
+x.8.0.977 = 1.0
+x.8.977.0 = 1.0
+x.9.0.484 = 1.0
+x.9.484.0 = 1.0
+x.10.0.901 = 1.0
+x.10.901.0 = 1.0
+x.11.0.810 = 1.0
+x.11.810.0 = 1.0
+x.12.0.631 = 1.0
+x.12.631.0 = 1.0
+x.13.0.616 = 1.0
+x.13.616.0 = 1.0
+x.14.0.842 = 1.0
+x.14.842.0 = 1.0
+x.15.0.851 = 1.0
+x.15.851.0 = 1.0
+x.16.0.601 = 1.0
+x.16.601.0 = 1.0
+x.17.0.215 = 1.0
+x.17.215.0 = 1.0
+x.18.0.606 = 1.0
+x.18.606.0 = 1.0
+x.19.0.121 = 1.0
+x.19.121.0 = 1.0
+x.20.0.604 = 1.0
+x.20.604.0 = 1.0
+x.21.0.689 = 1.0
+x.21.689.0 = 1.0
+x.22.0.360 = 1.0
+x.22.360.0 = 1.0
+x.23.0.182 = 1.0
+x.23.182.0 = 1.0
+x.24.0.888 = 1.0
+x.24.888.0 = 1.0
+x.25.0.582 = 1.0
+x.25.582.0 = 1.0
+x.26.0.184 = 1.0
+x.26.184.0 = 1.0
+x.27.0.947 = 1.0
+x.27.947.0 = 1.0
+x.28.0.423 = 1.0
+x.28.423.0 = 1.0
+x.29.0.101 = 1.0
+x.29.101.0 = 1.0
+x.30.0.185 = 1.0
+x.30.185.0 = 1.0
+x.31.0.51 = 1.0
+x.31.51.0 = 1.0
+x.32.0.221 = 1.0
+x.32.221.0 = 1.0
+x.33.0.406 = 1.0
+x.33.406.0 = 1.0
+x.34.0.283 = 1.0
+x.34.283.0 = 1.0
+x.35.0.140 = 1.0
+x.35.140.0 = 1.0
+x.36.0.662 = 1.0
+x.36.662.0 = 1.0
+x.37.0.247 = 1.0
+x.37.247.0 = 1.0
+x.38.0.17 = 1.0
+x.38.17.0 = 1.0
+x.39.0.763 = 1.0
+x.39.763.0 = 1.0
+x.40.0.943 = 1.0
+x.40.943.0 = 1.0
+x.41.0.443 = 1.0
+x.41.443.0 = 1.0
+x.42.0.255 = 1.0
+x.42.255.0 = 1.0
+x.43.0.833 = 1.0
+x.43.833.0 = 1.0
+x.44.0.359 = 1.0
+x.44.359.0 = 1.0
+x.45.0.660 = 1.0
+x.45.660.0 = 1.0
+x.46.0.109 = 1.0
+x.46.109.0 = 1.0
+x.47.0.137 = 1.0
+x.47.137.0 = 1.0
+x.48.0.559 = 1.0
+x.48.559.0 = 1.0
+x.49.0.400 = 1.0
+x.49.400.0 = 1.0
+x.50.0.972 = 1.0
+x.50.972.0 = 1.0
+y.0 = 0.0
+y.185 = 0.0
+y.888 = 0.0
+y.423 = 0.0
+y.360 = 0.0
+y.660 = 0.0
+y.662 = 0.0
+y.137 = 0.0
+y.322 = 0.0
+y.631 = 0.0
+y.689 = 0.0
+y.559 = 0.0
+y.550 = 0.0
+y.582 = 0.0
+y.606 = 0.0
+y.943 = 0.0
+y.901 = 0.0
+y.121 = 0.0
+y.763 = 0.0
+y.972 = 0.0
+y.303 = 0.0
+y.247 = 0.0
+y.17 = 0.0
+y.140 = 0.0
+y.101 = 0.0
+y.255 = 0.0
+y.851 = 0.0
+y.645 = 0.0
+y.977 = 0.0
+y.601 = 0.0
+y.810 = 0.0
+y.406 = 0.0
+y.400 = 0.0
+y.182 = 0.0
+y.484 = 0.0
+y.276 = 0.0
+y.359 = 0.0
+y.947 = 0.0
+y.215 = 0.0
+y.616 = 0.0
+y.221 = 0.0
+y.299 = 0.0
+y.833 = 0.0
+y.184 = 0.0
+y.604 = 0.0
+y.443 = 0.0
+y.283 = 0.0
+y.51 = 0.0
+y.109 = 0.0
+y.331 = 0.0
+y.842 = 0.0

@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544552434862.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2A7CF58D",
+    "lastKnownWriteTime" : 4323924656,
+    "last_content_update" : 1544552434862,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "FCFEB2BC",
+        "caption" : "route",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=route&cache_key=FCFEB2BC",
+        "displayedObservations" : "2",
+        "environment" : "",
+        "object" : "route",
+        "preview" : "0",
+        "totalObservations" : "2",
+        "variables" : "13"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

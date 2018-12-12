@@ -1,0 +1,955 @@
+The route of truck 1 is [0, 654, 307, 553, 288, 520, 616, 0]
+Total weight is 2.4798
+Total volume is 4.3421
+Total traval time is 50
+Total traval distance is 37737
+
+
+The route of truck 2 is [0, 180, 141, 220, 561, 408, 856, 535, 974, 401, 947, 0]
+Total weight is 1.915591
+Total volume is 3.1963000000000004
+Total traval time is 87
+Total traval distance is 68082
+
+
+The route of truck 3 is [0, 229, 763, 602, 501, 716, 525, 689, 4, 8, 319, 0]
+Total weight is 2.1482710000000003
+Total volume is 5.036099999999999
+Total traval time is 93
+Total traval distance is 72503
+
+
+The route of truck 4 is [0, 749, 843, 170, 164, 423, 932, 717, 710, 92, 428, 440, 489, 94, 0]
+Total weight is 2.38064
+Total volume is 4.9267
+Total traval time is 119
+Total traval distance is 92801
+
+
+The route of truck 5 is [0, 820, 216, 189, 865, 442, 504, 591, 57, 281, 254, 577, 0]
+Total weight is 2.061422
+Total volume is 6.9553
+Total traval time is 113
+Total traval distance is 89497
+
+
+The route of truck 6 is [0, 802, 230, 612, 793, 0]
+Total weight is 1.6964799999999998
+Total volume is 2.9156999999999997
+Total traval time is 46
+Total traval distance is 35994
+
+
+The route of truck 7 is [0, 790, 539, 459, 454, 0]
+Total weight is 2.4605499999999996
+Total volume is 5.2832
+Total traval time is 47
+Total traval distance is 37970
+
+
+The route of truck 8 is [0, 154, 283, 462, 693, 0]
+Total weight is 2.00654
+Total volume is 14.6189
+Total traval time is 51
+Total traval distance is 41254
+
+
+The route of truck 9 is [0, 813, 148, 799, 919, 593, 475, 43, 356, 510, 975, 570, 0]
+Total weight is 2.32043
+Total volume is 6.9434000000000005
+Total traval time is 106
+Total traval distance is 83000
+
+
+The route of truck 10 is [0, 831, 284, 899, 250, 911, 682, 468, 641, 380, 798, 476, 352, 841, 0]
+Total weight is 2.2496900000000006
+Total volume is 4.4824
+Total traval time is 123
+Total traval distance is 95637
+
+
+The route of truck 11 is [0, 304, 205, 64, 543, 7, 678, 606, 437, 992, 542, 955, 508, 133, 707, 40, 246, 0]
+Total weight is 2.4684589999999997
+Total volume is 6.0005
+Total traval time is 154
+Total traval distance is 121392
+
+
+The route of truck 12 is [0, 266, 562, 923, 436, 664, 752, 0]
+Total weight is 1.218008
+Total volume is 3.7836
+Total traval time is 99
+Total traval distance is 80057
+
+
+The route of truck 13 is [0, 290, 151, 410, 943, 970, 226, 0]
+Total weight is 2.41399
+Total volume is 3.9540999999999995
+Total traval time is 106
+Total traval distance is 85179
+
+
+The route of truck 14 is [0, 18, 734, 485, 965, 971, 157, 673, 751, 960, 861, 457, 24, 393, 458, 149, 332, 0]
+Total weight is 2.4758679999999997
+Total volume is 6.2112
+Total traval time is 187
+Total traval distance is 148431
+
+
+The route of truck 15 is [0, 534, 142, 536, 613, 792, 488, 187, 127, 320, 0]
+Total weight is 2.000589
+Total volume is 3.6606999999999994
+Total traval time is 158
+Total traval distance is 128132
+
+
+The route of truck 16 is [0, 626, 449, 0]
+Total weight is 1.39055
+Total volume is 2.2721
+Total traval time is 116
+Total traval distance is 95126
+
+
+The route of truck 17 is [0, 184, 372, 0]
+Total weight is 2.23776
+Total volume is 3.5876
+Total traval time is 120
+Total traval distance is 98275
+
+
+The route of truck 18 is [0, 924, 882, 299, 117, 227, 169, 878, 115, 378, 0]
+Total weight is 2.083045
+Total volume is 4.3254
+Total traval time is 185
+Total traval distance is 149606
+
+
+The route of truck 19 is [0, 280, 347, 203, 599, 864, 931, 363, 375, 851, 138, 892, 139, 260, 687, 0]
+Total weight is 2.4415820000000004
+Total volume is 6.315799999999999
+Total traval time is 236
+Total traval distance is 190174
+
+
+The route of truck 20 is [0, 219, 70, 302, 312, 422, 21, 403, 197, 286, 241, 486, 597, 0]
+Total weight is 2.17843
+Total volume is 6.729
+Total traval time is 220
+Total traval distance is 179418
+
+
+The route of truck 21 is [0, 915, 549, 552, 517, 747, 55, 194, 893, 252, 100, 623, 416, 89, 966, 60, 6, 917, 0]
+Total weight is 2.366403
+Total volume is 4.4173
+Total traval time is 236
+Total traval distance is 187616
+
+
+The route of truck 22 is [0, 744, 32, 406, 202, 145, 862, 82, 727, 0]
+Total weight is 2.044498
+Total volume is 3.7346000000000004
+Total traval time is 142
+Total traval distance is 115881
+
+
+The route of truck 23 is [0, 296, 0]
+Total weight is 1.95406
+Total volume is 3.4996
+Total traval time is 94
+Total traval distance is 77582
+
+
+The route of truck 24 is [0, 730, 672, 265, 819, 214, 683, 10, 0]
+Total weight is 2.3130450000000002
+Total volume is 4.0063
+Total traval time is 130
+Total traval distance is 104725
+
+
+The route of truck 25 is [0, 830, 126, 413, 282, 492, 771, 438, 396, 0]
+Total weight is 2.4037649999999995
+Total volume is 6.406499999999999
+Total traval time is 126
+Total traval distance is 101955
+
+
+The route of truck 26 is [0, 930, 844, 223, 873, 990, 2, 360, 399, 680, 166, 11, 275, 748, 310, 27, 0]
+Total weight is 2.315672
+Total volume is 5.2166
+Total traval time is 167
+Total traval distance is 132211
+
+
+The route of truck 27 is [0, 434, 941, 581, 481, 0]
+Total weight is 1.496787
+Total volume is 1.8172000000000001
+Total traval time is 98
+Total traval distance is 80386
+
+
+The route of truck 28 is [0, 685, 479, 936, 509, 630, 656, 891, 341, 118, 0]
+Total weight is 2.4449140000000003
+Total volume is 3.4393000000000002
+Total traval time is 135
+Total traval distance is 107250
+
+
+The route of truck 29 is [0, 973, 999, 887, 28, 496, 367, 0]
+Total weight is 2.3084399999999996
+Total volume is 5.7242
+Total traval time is 117
+Total traval distance is 95592
+
+
+The route of truck 30 is [0, 119, 719, 622, 301, 818, 573, 412, 942, 883, 0]
+Total weight is 2.2481539999999995
+Total volume is 3.9597
+Total traval time is 155
+Total traval distance is 124472
+
+
+The route of truck 31 is [0, 824, 571, 994, 839, 198, 238, 210, 433, 146, 0]
+Total weight is 2.44881
+Total volume is 4.0470999999999995
+Total traval time is 170
+Total traval distance is 137762
+
+
+The route of truck 32 is [0, 242, 76, 667, 96, 901, 75, 483, 159, 52, 961, 379, 671, 209, 959, 0]
+Total weight is 2.4982420000000003
+Total volume is 5.8790000000000004
+Total traval time is 215
+Total traval distance is 171057
+
+
+The route of truck 33 is [0, 72, 482, 49, 308, 639, 386, 632, 61, 737, 635, 415, 464, 201, 450, 303, 0]
+Total weight is 2.480891
+Total volume is 5.383900000000001
+Total traval time is 217
+Total traval distance is 173722
+
+
+The route of truck 34 is [0, 98, 986, 722, 318, 903, 0]
+Total weight is 2.37667
+Total volume is 7.441699999999999
+Total traval time is 138
+Total traval distance is 112369
+
+
+The route of truck 35 is [0, 927, 502, 988, 595, 758, 587, 466, 251, 805, 720, 0]
+Total weight is 1.7513600000000002
+Total volume is 8.0342
+Total traval time is 157
+Total traval distance is 124957
+
+
+The route of truck 36 is [0, 313, 298, 778, 842, 881, 800, 938, 0]
+Total weight is 2.43332
+Total volume is 4.2156
+Total traval time is 126
+Total traval distance is 102540
+
+
+The route of truck 37 is [0, 97, 755, 167, 334, 918, 85, 779, 877, 0]
+Total weight is 1.9827400000000002
+Total volume is 4.2733
+Total traval time is 130
+Total traval distance is 104367
+
+
+The route of truck 38 is [0, 309, 0]
+Total weight is 0.87262
+Total volume is 1.7074
+Total traval time is 84
+Total traval distance is 69374
+
+
+The route of truck 39 is [0, 272, 675, 366, 0]
+Total weight is 2.29412
+Total volume is 3.4131
+Total traval time is 98
+Total traval distance is 79381
+
+
+The route of truck 40 is [0, 417, 33, 568, 646, 181, 125, 191, 259, 41, 93, 880, 136, 0]
+Total weight is 2.4928269999999997
+Total volume is 6.497
+Total traval time is 147
+Total traval distance is 116214
+
+
+The route of truck 41 is [0, 814, 809, 200, 806, 897, 45, 29, 217, 470, 477, 531, 922, 106, 783, 0]
+Total weight is 2.463978
+Total volume is 5.156
+Total traval time is 147
+Total traval distance is 117094
+
+
+The route of truck 42 is [0, 101, 114, 700, 826, 171, 742, 400, 759, 338, 0]
+Total weight is 1.8812600000000004
+Total volume is 5.356600000000001
+Total traval time is 111
+Total traval distance is 87572
+
+
+The route of truck 43 is [0, 237, 158, 939, 850, 541, 58, 0]
+Total weight is 2.1010179999999994
+Total volume is 3.5889
+Total traval time is 85
+Total traval distance is 67700
+
+
+The route of truck 44 is [0, 276, 810, 871, 36, 550, 264, 565, 0]
+Total weight is 2.09208
+Total volume is 4.559200000000001
+Total traval time is 91
+Total traval distance is 72642
+
+
+The route of truck 45 is [0, 248, 478, 714, 846, 473, 738, 907, 0]
+Total weight is 2.462084
+Total volume is 4.0474
+Total traval time is 87
+Total traval distance is 69927
+
+
+The route of truck 46 is [0, 293, 609, 863, 529, 335, 603, 796, 608, 0]
+Total weight is 2.479673
+Total volume is 15.521
+Total traval time is 107
+Total traval distance is 85485
+
+
+The route of truck 47 is [0, 513, 47, 906, 644, 447, 545, 564, 705, 929, 0]
+Total weight is 1.620489
+Total volume is 3.8221
+Total traval time is 128
+Total traval distance is 101799
+
+
+The route of truck 48 is [0, 840, 59, 695, 0]
+Total weight is 1.83377
+Total volume is 3.1504
+Total traval time is 94
+Total traval distance is 76087
+
+
+The route of truck 49 is [0, 426, 753, 854, 193, 369, 679, 921, 0]
+Total weight is 1.854736
+Total volume is 3.2328
+Total traval time is 119
+Total traval distance is 94804
+
+
+The route of truck 50 is [0, 336, 518, 576, 0]
+Total weight is 1.36469
+Total volume is 4.3104
+Total traval time is 78
+Total traval distance is 63068
+
+
+The route of truck 51 is [0, 351, 455, 102, 74, 980, 647, 0]
+Total weight is 1.9161750000000002
+Total volume is 3.2327
+Total traval time is 103
+Total traval distance is 82426
+
+
+The route of truck 52 is [0, 611, 255, 86, 996, 186, 273, 30, 0]
+Total weight is 2.483892
+Total volume is 4.638
+Total traval time is 117
+Total traval distance is 93664
+
+
+The route of truck 53 is [0, 628, 937, 797, 211, 948, 484, 735, 429, 172, 761, 25, 706, 582, 0]
+Total weight is 2.2022130000000004
+Total volume is 7.193599999999999
+Total traval time is 172
+Total traval distance is 137299
+
+
+The route of truck 54 is [0, 983, 558, 875, 849, 112, 660, 894, 746, 31, 724, 610, 0]
+Total weight is 1.1141129999999997
+Total volume is 2.9005
+Total traval time is 164
+Total traval distance is 132198
+
+
+The route of truck 55 is [0, 718, 150, 0]
+Total weight is 2.3292
+Total volume is 3.5415
+Total traval time is 81
+Total traval distance is 66068
+
+
+The route of truck 56 is [0, 497, 876, 411, 404, 944, 669, 0]
+Total weight is 1.960273
+Total volume is 3.7841
+Total traval time is 118
+Total traval distance is 95649
+
+
+The route of truck 57 is [0, 621, 642, 247, 951, 414, 0]
+Total weight is 2.382475
+Total volume is 4.1535
+Total traval time is 120
+Total traval distance is 97319
+
+
+The route of truck 58 is [0, 271, 144, 245, 908, 53, 0]
+Total weight is 1.17596
+Total volume is 1.8293
+Total traval time is 125
+Total traval distance is 100629
+
+
+The route of truck 59 is [0, 740, 327, 615, 619, 895, 277, 690, 0]
+Total weight is 2.48332
+Total volume is 4.3809000000000005
+Total traval time is 151
+Total traval distance is 123055
+
+
+The route of truck 60 is [0, 617, 914, 357, 381, 498, 73, 503, 728, 548, 156, 0]
+Total weight is 2.012328
+Total volume is 3.8773999999999997
+Total traval time is 166
+Total traval distance is 133483
+
+
+The route of truck 61 is [0, 823, 505, 514, 982, 789, 703, 221, 607, 342, 838, 173, 0]
+Total weight is 2.451431
+Total volume is 6.3828
+Total traval time is 172
+Total traval distance is 137486
+
+
+The route of truck 62 is [0, 848, 657, 91, 23, 898, 182, 578, 0]
+Total weight is 2.428458
+Total volume is 4.487
+Total traval time is 130
+Total traval distance is 105657
+
+
+The route of truck 63 is [0, 365, 383, 546, 44, 661, 516, 0]
+Total weight is 2.49625
+Total volume is 8.604
+Total traval time is 122
+Total traval distance is 98149
+
+
+The route of truck 64 is [0, 453, 71, 991, 66, 168, 803, 676, 207, 934, 0]
+Total weight is 2.319385
+Total volume is 4.8819
+Total traval time is 135
+Total traval distance is 108288
+
+
+The route of truck 65 is [0, 329, 969, 852, 692, 446, 394, 538, 212, 397, 580, 232, 153, 0]
+Total weight is 2.4294
+Total volume is 9.686
+Total traval time is 145
+Total traval distance is 115981
+
+
+The route of truck 66 is [0, 441, 666, 495, 949, 269, 389, 855, 808, 14, 590, 37, 463, 354, 954, 767, 0]
+Total weight is 1.9966290000000004
+Total volume is 4.8785
+Total traval time is 160
+Total traval distance is 125069
+
+
+The route of truck 67 is [0, 645, 652, 161, 0]
+Total weight is 2.22852
+Total volume is 6.7521
+Total traval time is 39
+Total traval distance is 31572
+
+
+The route of truck 68 is [0, 257, 532, 391, 544, 291, 0]
+Total weight is 2.347779
+Total volume is 4.633
+Total traval time is 72
+Total traval distance is 57881
+
+
+The route of truck 69 is [0, 866, 721, 9, 925, 715, 600, 741, 17, 0]
+Total weight is 2.494885
+Total volume is 8.3711
+Total traval time is 105
+Total traval distance is 82462
+
+
+The route of truck 70 is [0, 732, 54, 128, 107, 967, 815, 345, 694, 328, 430, 977, 0]
+Total weight is 2.1791600000000004
+Total volume is 4.3950000000000005
+Total traval time is 151
+Total traval distance is 120408
+
+
+The route of truck 71 is [0, 764, 782, 997, 294, 465, 950, 493, 364, 0]
+Total weight is 2.47862
+Total volume is 4.9548000000000005
+Total traval time is 141
+Total traval distance is 114004
+
+
+The route of truck 72 is [0, 467, 409, 384, 346, 382, 860, 108, 46, 743, 104, 0]
+Total weight is 2.07017
+Total volume is 3.9456
+Total traval time is 163
+Total traval distance is 130937
+
+
+The route of truck 73 is [0, 236, 625, 461, 90, 362, 981, 723, 224, 912, 0]
+Total weight is 2.4618580000000003
+Total volume is 5.7813
+Total traval time is 168
+Total traval distance is 135465
+
+
+The route of truck 74 is [0, 859, 900, 491, 507, 129, 649, 206, 452, 258, 0]
+Total weight is 2.077728
+Total volume is 4.5319
+Total traval time is 194
+Total traval distance is 158730
+
+
+The route of truck 75 is [0, 111, 821, 926, 519, 547, 896, 696, 3, 0]
+Total weight is 2.0838
+Total volume is 5.853699999999999
+Total traval time is 195
+Total traval distance is 158252
+
+
+The route of truck 76 is [0, 358, 836, 225, 879, 585, 121, 62, 0]
+Total weight is 2.26704
+Total volume is 5.3165
+Total traval time is 198
+Total traval distance is 162065
+
+
+The route of truck 77 is [0, 270, 968, 239, 13, 0]
+Total weight is 2.457335
+Total volume is 4.2726
+Total traval time is 181
+Total traval distance is 148455
+
+
+The route of truck 78 is [0, 620, 537, 300, 658, 48, 833, 67, 688, 231, 405, 234, 0]
+Total weight is 1.9937690000000003
+Total volume is 4.1207
+Total traval time is 233
+Total traval distance is 189010
+
+
+The route of truck 79 is [0, 390, 337, 731, 583, 956, 540, 935, 0]
+Total weight is 1.98921
+Total volume is 3.5144
+Total traval time is 208
+Total traval distance is 170512
+
+
+The route of truck 80 is [0, 424, 584, 775, 192, 0]
+Total weight is 1.8513700000000002
+Total volume is 3.5632
+Total traval time is 189
+Total traval distance is 155292
+
+
+The route of truck 81 is [0, 987, 762, 371, 421, 0]
+Total weight is 2.2856609999999997
+Total volume is 5.6386
+Total traval time is 190
+Total traval distance is 156598
+
+
+The route of truck 82 is [0, 185, 500, 395, 780, 469, 19, 958, 985, 51, 179, 0]
+Total weight is 1.708192
+Total volume is 3.4488000000000003
+Total traval time is 243
+Total traval distance is 197494
+
+
+The route of truck 83 is [0, 474, 708, 12, 274, 957, 869, 235, 0]
+Total weight is 0.8333149999999999
+Total volume is 1.8528
+Total traval time is 227
+Total traval distance is 184806
+
+
+The route of truck 84 is [0, 359, 39, 77, 889, 0]
+Total weight is 2.45845
+Total volume is 8.2674
+Total traval time is 200
+Total traval distance is 164586
+
+
+The route of truck 85 is [0, 26, 143, 774, 702, 388, 315, 736, 886, 888, 766, 521, 637, 0]
+Total weight is 2.3402380000000003
+Total volume is 7.362599999999999
+Total traval time is 240
+Total traval distance is 195251
+
+
+The route of truck 86 is [0, 804, 1, 213, 575, 0]
+Total weight is 2.3963029999999996
+Total volume is 4.4084
+Total traval time is 172
+Total traval distance is 141398
+
+
+The route of truck 87 is [0, 487, 933, 594, 729, 592, 343, 0]
+Total weight is 2.1935000000000002
+Total volume is 4.0784
+Total traval time is 191
+Total traval distance is 155643
+
+
+The route of truck 88 is [0, 285, 629, 952, 350, 0]
+Total weight is 2.157936
+Total volume is 3.5704
+Total traval time is 170
+Total traval distance is 139673
+
+
+The route of truck 89 is [0, 262, 0]
+Total weight is 0.60722
+Total volume is 0.953
+Total traval time is 154
+Total traval distance is 126960
+
+
+The route of truck 90 is [0, 822, 439, 0]
+Total weight is 2.26912
+Total volume is 4.2203
+Total traval time is 162
+Total traval distance is 133692
+
+
+The route of truck 91 is [0, 533, 16, 963, 261, 769, 739, 174, 691, 355, 962, 0]
+Total weight is 2.4017380000000004
+Total volume is 8.1975
+Total traval time is 210
+Total traval distance is 171145
+
+
+The route of truck 92 is [0, 858, 560, 244, 361, 528, 567, 344, 353, 0]
+Total weight is 2.3561
+Total volume is 4.1052
+Total traval time is 183
+Total traval distance is 149072
+
+
+The route of truck 93 is [0, 946, 631, 443, 711, 103, 636, 0]
+Total weight is 1.205074
+Total volume is 3.6685
+Total traval time is 167
+Total traval distance is 135805
+
+
+The route of truck 94 is [0, 733, 370, 83, 588, 726, 402, 506, 0]
+Total weight is 2.35036
+Total volume is 3.9172000000000002
+Total traval time is 159
+Total traval distance is 129011
+
+
+The route of truck 95 is [0, 993, 195, 122, 698, 905, 35, 297, 263, 0]
+Total weight is 1.647335
+Total volume is 9.757
+Total traval time is 171
+Total traval distance is 138665
+
+
+The route of truck 96 is [0, 253, 651, 368, 834, 123, 0]
+Total weight is 2.01358
+Total volume is 9.462299999999999
+Total traval time is 147
+Total traval distance is 119673
+
+
+The route of truck 97 is [0, 827, 659, 750, 627, 407, 604, 88, 78, 0]
+Total weight is 2.369409
+Total volume is 6.985899999999999
+Total traval time is 177
+Total traval distance is 144348
+
+
+The route of truck 98 is [0, 512, 868, 816, 807, 63, 99, 910, 524, 279, 113, 0]
+Total weight is 1.408021
+Total volume is 3.5149999999999997
+Total traval time is 132
+Total traval distance is 105240
+
+
+The route of truck 99 is [0, 349, 163, 472, 0]
+Total weight is 1.724499
+Total volume is 3.4007
+Total traval time is 72
+Total traval distance is 58933
+
+
+The route of truck 100 is [0, 785, 130, 456, 784, 204, 964, 314, 0]
+Total weight is 2.391819
+Total volume is 4.4509
+Total traval time is 110
+Total traval distance is 88936
+
+
+The route of truck 101 is [0, 940, 699, 392, 563, 677, 791, 945, 135, 697, 289, 81, 870, 0]
+Total weight is 2.1737319999999998
+Total volume is 5.1926000000000005
+Total traval time is 155
+Total traval distance is 123441
+
+
+The route of truck 102 is [0, 596, 480, 648, 199, 817, 324, 909, 837, 0]
+Total weight is 2.4579250000000004
+Total volume is 3.9134
+Total traval time is 142
+Total traval distance is 114657
+
+
+The route of truck 103 is [0, 435, 340, 756, 177, 80, 311, 134, 0]
+Total weight is 2.2099499999999996
+Total volume is 4.0821
+Total traval time is 119
+Total traval distance is 94486
+
+
+The route of truck 104 is [0, 218, 175, 420, 601, 376, 140, 812, 515, 0]
+Total weight is 1.30044
+Total volume is 3.6992000000000003
+Total traval time is 139
+Total traval distance is 111940
+
+
+The route of truck 105 is [0, 287, 847, 432, 555, 0]
+Total weight is 2.16491
+Total volume is 3.9719
+Total traval time is 116
+Total traval distance is 95758
+
+
+The route of truck 106 is [0, 240, 15, 559, 249, 788, 0]
+Total weight is 2.4826099999999998
+Total volume is 4.216200000000001
+Total traval time is 140
+Total traval distance is 114181
+
+
+The route of truck 107 is [0, 526, 131, 928, 116, 872, 196, 377, 331, 373, 0]
+Total weight is 2.34616
+Total volume is 4.4689
+Total traval time is 170
+Total traval distance is 138289
+
+
+The route of truck 108 is [0, 326, 137, 556, 598, 317, 681, 0]
+Total weight is 2.497665
+Total volume is 3.7607000000000004
+Total traval time is 145
+Total traval distance is 117056
+
+
+The route of truck 109 is [0, 448, 811, 920, 638, 653, 0]
+Total weight is 2.35307
+Total volume is 9.1262
+Total traval time is 136
+Total traval distance is 109955
+
+
+The route of truck 110 is [0, 339, 374, 34, 712, 0]
+Total weight is 1.75858
+Total volume is 3.1527999999999996
+Total traval time is 124
+Total traval distance is 101099
+
+
+The route of truck 111 is [0, 655, 874, 0]
+Total weight is 1.20366
+Total volume is 2.588
+Total traval time is 91
+Total traval distance is 74882
+
+
+The route of truck 112 is [0, 828, 530, 445, 109, 165, 0]
+Total weight is 2.2532660000000004
+Total volume is 8.4589
+Total traval time is 123
+Total traval distance is 99544
+
+
+The route of truck 113 is [0, 348, 387, 825, 1000, 765, 0]
+Total weight is 2.09964
+Total volume is 3.8756
+Total traval time is 130
+Total traval distance is 105801
+
+
+The route of truck 114 is [0, 566, 972, 68, 5, 978, 0]
+Total weight is 2.0532500000000002
+Total volume is 7.3298000000000005
+Total traval time is 137
+Total traval distance is 111759
+
+
+The route of truck 115 is [0, 325, 316, 569, 176, 684, 155, 867, 0]
+Total weight is 1.5608399999999998
+Total volume is 2.9614
+Total traval time is 155
+Total traval distance is 126155
+
+
+The route of truck 116 is [0, 267, 884, 0]
+Total weight is 1.329154
+Total volume is 2.281
+Total traval time is 122
+Total traval distance is 100764
+
+
+The route of truck 117 is [0, 268, 0]
+Total weight is 1.22922
+Total volume is 2.2785
+Total traval time is 118
+Total traval distance is 96698
+
+
+The route of truck 118 is [0, 643, 0]
+Total weight is 1.91268
+Total volume is 5.6444
+Total traval time is 114
+Total traval distance is 94154
+
+
+The route of truck 119 is [0, 243, 913, 0]
+Total weight is 1.000115
+Total volume is 1.4915
+Total traval time is 118
+Total traval distance is 96635
+
+
+The route of truck 120 is [0, 618, 333, 120, 0]
+Total weight is 2.39512
+Total volume is 5.972200000000001
+Total traval time is 136
+Total traval distance is 110922
+
+
+The route of truck 121 is [0, 87, 786, 0]
+Total weight is 1.74966
+Total volume is 3.0438
+Total traval time is 121
+Total traval distance is 98923
+
+
+The route of truck 122 is [0, 725, 0]
+Total weight is 1.38132
+Total volume is 1.9981
+Total traval time is 112
+Total traval distance is 91744
+
+
+The route of truck 123 is [0, 745, 0]
+Total weight is 2.3512
+Total volume is 3.4563
+Total traval time is 112
+Total traval distance is 92866
+
+
+The route of truck 124 is [0, 451, 460, 222, 995, 523, 634, 853, 69, 22, 305, 772, 0]
+Total weight is 2.116698
+Total volume is 3.8691
+Total traval time is 192
+Total traval distance is 154564
+
+
+The route of truck 125 is [0, 152, 979, 770, 499, 522, 322, 0]
+Total weight is 2.41844
+Total volume is 11.4679
+Total traval time is 160
+Total traval distance is 131126
+
+
+The route of truck 126 is [0, 624, 554, 998, 904, 665, 494, 663, 668, 640, 79, 557, 0]
+Total weight is 1.4712100000000001
+Total volume is 4.440200000000001
+Total traval time is 163
+Total traval distance is 130762
+
+
+The route of truck 127 is [0, 777, 586, 425, 330, 0]
+Total weight is 2.3111300000000004
+Total volume is 5.261900000000001
+Total traval time is 99
+Total traval distance is 80344
+
+
+The route of truck 128 is [0, 776, 709, 781, 188, 885, 323, 398, 178, 95, 418, 902, 511, 757, 208, 38, 84, 0]
+Total weight is 2.309279
+Total volume is 4.904799999999999
+Total traval time is 174
+Total traval distance is 139365
+
+
+The route of truck 129 is [0, 292, 650, 701, 490, 183, 794, 233, 321, 835, 160, 0]
+Total weight is 1.7550199999999998
+Total volume is 4.1895
+Total traval time is 146
+Total traval distance is 116779
+
+
+The route of truck 130 is [0, 686, 989, 0]
+Total weight is 2.44104
+Total volume is 5.4309
+Total traval time is 81
+Total traval distance is 65610
+
+
+The route of truck 131 is [0, 471, 674, 110, 614, 551, 527, 572, 50, 0]
+Total weight is 0.8408300000000001
+Total volume is 1.3951
+Total traval time is 242
+Total traval distance is 197221
+
+
+The route of truck 132 is [0, 147, 431, 444, 787, 65, 278, 132, 589, 306, 633, 162, 0]
+Total weight is 2.3264800000000005
+Total volume is 5.085299999999999
+Total traval time is 229
+Total traval distance is 185402
+
+
+The route of truck 133 is [0, 795, 20, 579, 984, 713, 829, 215, 56, 295, 916, 256, 845, 890, 760, 953, 0]
+Total weight is 2.449824
+Total volume is 6.643199999999999
+Total traval time is 245
+Total traval distance is 197090
+
+
+The route of truck 134 is [0, 670, 832, 42, 385, 976, 190, 857, 419, 662, 574, 0]
+Total weight is 1.900687
+Total volume is 11.5684
+Total traval time is 161
+Total traval distance is 130355
+
+
+The route of truck 135 is [0, 773, 704, 105, 768, 228, 427, 124, 0]
+Total weight is 2.316766
+Total volume is 4.6785
+Total traval time is 182
+Total traval distance is 146975
+
+
+The route of truck 136 is [0, 754, 605, 801, 0]
+Total weight is 0.757266
+Total volume is 1.1878
+Total traval time is 37
+Total traval distance is 29806
+
+
+Completed!
+
+Total Cost = 259443
