@@ -48,5 +48,5 @@ Total traval distance is 175360
 
 
 Completed!
-
-totalCost = 17401.832
+Run time = 0:22:36.279282
+Total cost =  17401.832
