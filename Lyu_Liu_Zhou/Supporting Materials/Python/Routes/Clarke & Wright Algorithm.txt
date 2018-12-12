@@ -1,0 +1,52 @@
+The route of truck 1 is [0, 616, 645, 423, 689, 400, 947, 763, 810, 0]
+Total weight is 2.383330000000001
+Total volume is 5.956899999999999
+Total traval time is 113
+Total traval distance is 90292
+
+
+The route of truck 2 is [0, 276, 550, 255, 484, 582, 660, 662, 0]
+Total weight is 1.44432
+Total volume is 2.6506000000000003
+Total traval time is 138
+Total traval distance is 112005
+
+
+The route of truck 3 is [0, 247, 221, 182, 604, 283, 101, 606, 360, 977, 842, 0]
+Total weight is 2.4916180000000008
+Total volume is 6.4567000000000005
+Total traval time is 227
+Total traval distance is 184463
+
+
+The route of truck 4 is [0, 406, 184, 299, 901, 303, 0]
+Total weight is 2.47172
+Total volume is 4.0227
+Total traval time is 166
+Total traval distance is 136331
+
+
+The route of truck 5 is [0, 443, 631, 215, 888, 185, 121, 833, 0]
+Total weight is 1.468999
+Total volume is 4.850499999999999
+Total traval time is 243
+Total traval distance is 198489
+
+
+The route of truck 6 is [0, 851, 972, 109, 331, 137, 322, 559, 140, 601, 0]
+Total weight is 1.005746
+Total volume is 2.5118
+Total traval time is 242
+Total traval distance is 196048
+
+
+The route of truck 7 is [0, 17, 943, 359, 51, 0]
+Total weight is 2.41318
+Total volume is 7.8911999999999995
+Total traval time is 214
+Total traval distance is 175360
+
+
+Completed!
+
+totalCost = 17401.832
